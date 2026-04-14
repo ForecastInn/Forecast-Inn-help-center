@@ -1,0 +1,125 @@
+```html
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ForecastInn Help Center</title>
+  <meta name="description" content="Dokumentasi resmi ForecastInn - Platform Revenue Intelligence untuk Hotel">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Inter', -apple-system, sans-serif; line-height: 1.6; color: #0f172a; background: #f8fafc; }
+    .container { max-width: 1200px; margin: 0 auto; padding: 60px 20px; }
+    .header { text-align: center; margin-bottom: 60px; }
+    .logo { font-size: 48px; font-weight: 700; color: #2563eb; margin-bottom: 16px; }
+    .tagline { font-size: 18px; color: #475569; }
+    .search-box { max-width: 600px; margin: 40px auto; }
+    .search-box input {
+      width: 100%; padding: 16px 24px; font-size: 16px;
+      border: 2px solid #e2e8f0; border-radius: 12px;
+      transition: border-color 0.3s;
+    }
+    .search-box input:focus { border-color: #2563eb; outline: none; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; margin-top: 40px; }
+    .card {
+      background: white; padding: 32px; border-radius: 16px;
+      border: 1px solid #e2e8f0; transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .card:hover { transform: translateY(-4px); box-shadow: 0 12px 24px rgba(0,0,0,0.1); }
+    .card-icon { font-size: 32px; margin-bottom: 16px; }
+    .card-title { font-size: 20px; font-weight: 600; margin-bottom: 12px; color: #0f172a; }
+    .card-desc { color: #475569; margin-bottom: 16px; }
+    .card-link {
+      display: inline-block; padding: 10px 20px;
+      background: #2563eb; color: white; text-decoration: none;
+      border-radius: 8px; font-weight: 500; transition: background 0.3s;
+    }
+    .card-link:hover { background: #1d4ed8; }
+    .footer { text-align: center; margin-top: 80px; padding-top: 40px; border-top: 1px solid #e2e8f0; color: #94a3b8; }
+    .footer a { color: #2563eb; text-decoration: none; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="logo">🏨 ForecastInn Help Center</div>
+      <div class="tagline">Platform Revenue Intelligence untuk Hotel</div>
+    </div>
+
+    <div class="search-box">
+      <input type="text" placeholder="🔍 Cari dokumentasi..." id="search">
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <div class="card-icon">🚀</div>
+        <h3 class="card-title">Mulai Cepat</h3>
+        <p class="card-desc">Pelajari ForecastInn dalam 5 menit</p>
+        <a href="QUICK_START.html" class="card-link">Mulai →</a>
+      </div>
+
+      <div class="card">
+        <div class="card-icon">📖</div>
+        <h3 class="card-title">Panduan Lengkap</h3>
+        <p class="card-desc">Dokumentasi lengkap semua fitur</p>
+        <a href="CUSTOMER_GUIDE.html" class="card-link">Baca →</a>
+      </div>
+
+      <div class="card">
+        <div class="card-icon">🔧</div>
+        <h3 class="card-title">Troubleshooting</h3>
+        <p class="card-desc">Solusi masalah umum</p>
+        <a href="TROUBLESHOOTING.html" class="card-link">Perbaiki →</a>
+      </div>
+
+      <div class="card">
+        <div class="card-icon">📸</div>
+        <h3 class="card-title">Screenshot Guides</h3>
+        <p class="card-desc">Panduan visual langkah demi langkah</p>
+        <a href="#screenshots" class="card-link">Lihat →</a>
+      </div>
+
+      <div class="card">
+        <div class="card-icon">💬</div>
+        <h3 class="card-title">FAQ</h3>
+        <p class="card-desc">Pertanyaan yang sering diajukan</p>
+        <a href="#faq" class="card-link">Jawaban →</a>
+      </div>
+
+      <div class="card">
+        <div class="card-icon">📞</div>
+        <h3 class="card-title">Hubungi Support</h3>
+        <p class="card-desc">Butuh bantuan lebih lanjut?</p>
+```
+```html
+       <a href="mailto:support@forecastinn.com" class="card-link">Kontak →</a>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>&copy; 2026 ForecastInn. All rights reserved.</p>
+      <p>
+        📧 support@forecastinn.com |
+        📱 +62 822 3538 3168 |
+        <a href="https://forecastinn.com" target="_blank">forecastinn.com</a>
+      </p>
+    </div>
+  </div>
+
+  <script>
+    // Simple search functionality
+    document.getElementById('search').addEventListener('keyup', function(e) {
+      if (e.key === 'Enter') {
+        const query = this.value.toLowerCase();
+        const cards = document.querySelectorAll('.card');
+        cards.forEach(card => {
+          const text = card.textContent.toLowerCase();
+          card.style.display = text.includes(query) ? 'block' : 'none';
+        });
+      }
+    });
+  </script>
+</body>
+</html>
+```
